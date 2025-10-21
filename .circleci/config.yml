@@ -1,0 +1,52 @@
+version: 2.1
+
+jobs:
+  run-script:
+    docker:
+      - image: cimg/python:3.11
+    steps:
+      - checkout
+
+      - run:
+          name: Install dependencies
+          command: |
+            sudo apt-get update
+            sudo apt-get install -y \
+              xvfb unzip wget curl bzip2 fonts-liberation libgtk-3-0 libdbus-glib-1-2 \
+              libasound2 libnss3 libx11-xcb1 libxcomposite1 libxdamage1 libxrandr2 \
+              libgbm1 libpango-1.0-0 libcairo2
+            python -m pip install --upgrade pip
+            pip install -r requirements.txt
+
+      - run:
+          name: Install Firefox and Geckodriver
+          command: |
+            wget -q "https://download.mozilla.org/?product=firefox-latest&os=linux64&lang=en-US" -O firefox.tar.xz
+            tar -xf firefox.tar.xz
+            sudo mv firefox /opt/firefox
+            sudo ln -sf /opt/firefox/firefox /usr/local/bin/firefox
+
+            wget -q "https://github.com/mozilla/geckodriver/releases/download/v0.36.0/geckodriver-v0.36.0-linux64.tar.gz"
+            tar -xzf geckodriver-v0.36.0-linux64.tar.gz
+            sudo mv geckodriver /usr/local/bin/
+
+            echo "✅ Firefox and Geckodriver installed successfully"
+            firefox --version
+            geckodriver --version
+
+      - run:
+          name: Download Firefox profile
+          command: |
+            wget -O firefoxprofile.zip "https://www.dropbox.com/scl/fi/fe1kzui8p044l32j5113p/firefoxprofile.zip?rlkey=8pm1bcievyw6aicvffkr48t7j&st=ze71r7gl&dl=1"
+            unzip firefoxprofile.zip -d $HOME/
+            echo "Profile extracted to $HOME/ez32zja8.default-release"
+
+      - run:
+          name: Run script
+          command: xvfb-run -a python main.pyc
+
+workflows:
+  version: 2
+  manual-run:
+    jobs:
+      - run-script
