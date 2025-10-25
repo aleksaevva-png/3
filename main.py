@@ -27,11 +27,6 @@ groups = [
     "@FM_cryptooo",
     "@CryptoHotairdrop",
     "@cryptorize_discussion",
-    "@crypto_quest_chat",
-    "@CTPchat",
-    "@cryptoverse",
-    "@BCDTrading",
-    "@Crypto_Canvas",
     "@adl333333adl"
 ]
 message_text = """✨ JUPITER EXCHANGE AIRDROP IS NOW LIVE! ✨
