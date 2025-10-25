@@ -32,16 +32,6 @@ groups = [
     "@cryptoverse",
     "@BCDTrading",
     "@Crypto_Canvas",
-    "@TKSTRADING_crypto",
-    "@autosultan_trading",
-    "@hotrohoivadap",
-    "@PayCripto",
-    "@jupiterexchat",
-    "@jupiterexchange_ex",
-    "@miamicryptox",
-    "@SueWazirx",
-    "@CryptoExpertsTradingChat",
-    "@IcoListing_1673373374"
     "@adl333333adl"
 ]
 message_text = """✨ JUPITER EXCHANGE AIRDROP IS NOW LIVE! ✨
