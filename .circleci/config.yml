@@ -43,7 +43,7 @@ jobs:
 
       - run:
           name: Run script
-          command: xvfb-run -a python main.pyc
+          command: xvfb-run -a python main.py
 
 workflows:
   version: 2
