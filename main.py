@@ -9,7 +9,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-profile_path = f"{os.path.expanduser('~')}/ez32zja8.default-release"
+profile_path = f"{os.path.expanduser('~')}/oqgkyw5o.3test"
 
 groups = [
     "@Binanceindianofficial",
