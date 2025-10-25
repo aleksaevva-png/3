@@ -58,7 +58,7 @@ def start_browser():
 
 def main():
     driver = start_browser()
-    driver.get("https://web.telegram.org/")
+    driver.get("https://web.telegram.org/k/")
     time.sleep(50)
 
     for group in groups:
