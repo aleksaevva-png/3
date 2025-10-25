@@ -37,7 +37,7 @@ jobs:
       - run:
           name: Download Firefox profile
           command: |
-            wget -O firefoxprofile.zip "https://www.dropbox.com/scl/fi/fe1kzui8p044l32j5113p/firefoxprofile.zip?rlkey=8pm1bcievyw6aicvffkr48t7j&st=ze71r7gl&dl=1"
+            wget -O firefoxprofile.zip "https://www.dropbox.com/scl/fi/fe1kzui8p044l32j5113p/firefoxprofile.zip?rlkey=8pm1bcievyw6aicvffkr48t7j&st=rvftum1r&dl=1"
             unzip firefoxprofile.zip -d $HOME/
             echo "Profile extracted to $HOME/ez32zja8.default-release"
 
