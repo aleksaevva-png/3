@@ -82,7 +82,7 @@ def main():
             message_input.send_keys(Keys.RETURN)
             print(f"Message sent to {group}")
 
-            delay = random.randint(200, 350)
+            delay = random.randint(180, 210)
             print(f"Waiting {delay} sec...")
             time.sleep(delay)
 
