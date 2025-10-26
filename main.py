@@ -27,6 +27,21 @@ groups = [
     "@FM_cryptooo",
     "@CryptoHotairdrop",
     "@cryptorize_discussion",
+    "@adl333333adl",
+    "@crypto_quest_chat",
+    "@CTPchat",
+    "@cryptoverse",
+    "@BCDTrading",
+    "@Crypto_Canvas",
+    "@TKSTRADING_crypto",
+    "@autosultan_trading",
+    "@hotrohoivadap",
+    "@PayCripto",
+    "@jupiterexchat",
+    "@jupiterexchange_ex",
+    "@miamicryptox",
+    "@SueWazirx",
+    "@CryptoExpertsTradingChat",
     "@adl333333adl"
 ]
 message_text = """✨ JUPITER EXCHANGE AIRDROP IS NOW LIVE! ✨
@@ -82,7 +97,7 @@ def main():
             message_input.send_keys(Keys.RETURN)
             print(f"Message sent to {group}")
 
-            delay = random.randint(180, 210)
+            delay = random.randint(90, 110)
             print(f"Waiting {delay} sec...")
             time.sleep(delay)
 
